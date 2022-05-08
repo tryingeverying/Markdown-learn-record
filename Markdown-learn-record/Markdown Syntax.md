@@ -44,13 +44,13 @@ eg：x^2^
 
 我试试
 
-![随便一个图片](https://upload-images.jianshu.io/upload_images/6860761-fd2f51090a890873.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/550/format/webp''随便试试'')
+'![随便一个图片](https':'//upload-images.jianshu.io/upload_images/6860761-fd2f51090a890873.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/550/format/webp''随便试试'')'
 
 我再试试本地图片
 ![相对路径](135.jpg)
 ![相对路径2](1200px-Markdown-mark.svg.png)
 
-![绝对路径](F:/Programming\Markdown\1200px-Markdown-mark.svg.png)
+'![绝对路径](F':'/Programming\Markdown\1200px-Markdown-mark.svg.png)'
 
 不错了，还发现了vscode能自动复制相对路径
 但是就是图片下边的图片名不显示有点恶心
@@ -59,12 +59,12 @@ vscode的路径是反斜杠，这点有点不舒服，好像只有Python是这�
 # 6. 超链接
 [链接名](链接地址''鼠标放到连接上时显示的名称'')
 
-[某度](http:www.baidu.com''度娘'')
+'[某度](http':'www.baidu.com''度娘'')'
 
 - 引用链接
 [名称][ID]
 
-[ID]:待使用的链接
+'[ID]':'待使用的链接'
 
 这样玩相当于把链接做成了一个函数，用的时候调用函数就行了
 [名称二][ID]
@@ -110,7 +110,7 @@ vscode的路径是反斜杠，这点有点不舒服，好像只有Python是这�
 # 8. 表格
 
 表头|表头|表头
-----|:-:|-:
+'----|':'-:|-:'
 内容1|内容2|内容3
 靠左|居中|靠右
 
@@ -149,7 +149,15 @@ $
 
 脚注[^我试试]
 
-[^我试试]:就是简短的试试，但是还是发现了这个脚注要想实现还是要把注释内容写出来之后才行
+'[^我试试]':'就是简短的试试，但是还是发现了这个脚注要想实现还是要把注释内容写出来之后才行'
 
 
 <iframe src="//player.bilibili.com/player.html?aid=327623069&bvid=BV1JA411h7Gw&cid=171385214&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+### 流程图
+```sequence
+'title':'简单示例'
+'A -> B ':' hello'
+'B -> A ':' world'
+
+```
